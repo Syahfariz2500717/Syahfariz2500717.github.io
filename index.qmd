@@ -1,10 +1,12 @@
 ---
-title: "tem_website"
+title: "Your Name"
 ---
 
-This is a Quarto website.
+## Welcome to My Website
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+![Your Photo](path/to/photo.jpg){width=50%}
+
+Here is a short introduction about myself...
 
 ```{r}
 1 + 1
