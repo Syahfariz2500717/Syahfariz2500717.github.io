@@ -4,7 +4,7 @@ title: "Your Name"
 
 ## Welcome to My Website
 
-![Photo](images/mypic.jpg){width=50%}
+![A picture of me](images/mypic.jpg){width=50%}
 
 Here is a short introduction about myself :
 I am a year 1 applied computing student and I was from Temasek Polytechnic

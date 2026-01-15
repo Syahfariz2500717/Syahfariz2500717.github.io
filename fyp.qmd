@@ -6,6 +6,6 @@ Here are some content relating to my fyp project.
 
 I used UI path to help with the rpa of invoices with Tampines Town Council. Below is an example of how the UI Path workspace looks like.
 
-![Photo](images/uipath.png){width=50%}
+![UI Path Workflow](images/uipath.png){width=50%}
 
 
