@@ -1,4 +1,12 @@
 ---
-title: "movie"
+title: "My Favourite Movie"
 editor: visual
 ---
+
+![A picture of the movie poster](images/movie.jpg){width=50%}
+
+Year of released: 2012
+Genre: Action/Adventure
+Duration of movie: 2h 23m
+
+It is a really good movie because it is the first movie of the avengers.

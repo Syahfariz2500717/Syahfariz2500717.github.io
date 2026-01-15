@@ -5,7 +5,36 @@ title: "Data Visualization"
 
 ## My Visualization Project
 
-Here is a plot from my student work:
+I created this visualization during my **Data Science** course. The task was to explore the `mtcars` datasets.
 
+### Steps I followed:
 
-**Explanation:** This plot shows the relationship between fuel efficiency and car weight...
+1. Loaded the data in R
+2. Cleaned column names
+3. Created a scatter plot with `ggplot2`
+
+### Here’s the code I used:
+
+```{r}
+#| label: fig-mpg-vs-hp
+#| fig-cap: "MPG vs Horsepower in mtcars dataset"
+library(ggplot2)
+ggplot(mtcars, aes(x = mpg, y = hp)) +
+  geom_point(color = "blue") +
+  labs(title = "Fuel Efficiency vs Horsepower")
+```
+
+### Key Findings:
+
+- **Negative correlation**: Higher horsepower generally means lower MPG
+- **Outliers**: Some cars have unusual MPG for their horsepower
+- > This insight helped me understand engine efficiency trade-offs
+
+### Resources:
+
+- [Dataset Documentation](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html)
+- [ggplot2 Cheatsheet](https://ggplot2.tidyverse.org/)
+
+---
+
+*This project taught me the importance of choosing the right visualization for continuous variables.*

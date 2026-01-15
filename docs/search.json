@@ -2,14 +2,14 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Your Name",
+    "title": "Introduction",
     "section": "",
     "text": "A picture of me\n\n\nHere is a short introduction about myself : I am a year 1 applied computing student and I was from Temasek Polytechnic"
   },
   {
     "objectID": "index.html#welcome-to-my-website",
     "href": "index.html#welcome-to-my-website",
-    "title": "Your Name",
+    "title": "Introduction",
     "section": "",
     "text": "A picture of me\n\n\nHere is a short introduction about myself : I am a year 1 applied computing student and I was from Temasek Polytechnic"
   },
@@ -25,20 +25,34 @@
     "href": "fyp.html",
     "title": "FYP",
     "section": "",
-    "text": "Here are some content relating to my fyp project.\nI used UI path to help with the rpa of invoices with Tampines Town Council. Below is an example of how the UI Path workspace looks like.\n\n\n\nPhoto"
+    "text": "Here are some content relating to my fyp project.\nI used UI path to help with the rpa of invoices with Tampines Town Council. Below is an example of how the UI Path workspace looks like.\n\n\n\nUI Path Workflow"
   },
   {
     "objectID": "data-vis.html",
     "href": "data-vis.html",
     "title": "Data Visualization",
     "section": "",
-    "text": "Here is a plot from my student work:\n\nlibrary(ggplot2)\nggplot(mtcars, aes(x = mpg, y = wt)) +\n  geom_point() +\n  labs(title = \"MPG vs Weight\")\n\n\n\n\n\n\n\n\nExplanation: This plot shows the relationship between fuel efficiency and car weight…"
+    "text": "Here is a plot from my student work:\nExplanation: This plot shows the relationship between fuel efficiency and car weight…"
   },
   {
     "objectID": "data-vis.html#my-visualization-project",
     "href": "data-vis.html#my-visualization-project",
     "title": "Data Visualization",
     "section": "",
-    "text": "Here is a plot from my student work:\n\nlibrary(ggplot2)\nggplot(mtcars, aes(x = mpg, y = wt)) +\n  geom_point() +\n  labs(title = \"MPG vs Weight\")\n\n\n\n\n\n\n\n\nExplanation: This plot shows the relationship between fuel efficiency and car weight…"
+    "text": "Here is a plot from my student work:\nExplanation: This plot shows the relationship between fuel efficiency and car weight…"
+  },
+  {
+    "objectID": "movie.html",
+    "href": "movie.html",
+    "title": "My Favourite Movie",
+    "section": "",
+    "text": "A picture of the movie poster\n\n\nYear of released: 2012 Genre: Action/Adventure Duration of movie: 2h 23m\nIt is a really good movie because it is the first movie of the avengers."
+  },
+  {
+    "objectID": "reflection.html",
+    "href": "reflection.html",
+    "title": "Reflection on the use of GenAI",
+    "section": "",
+    "text": "Recently I have been using Deepseek and Gemini to assist me with some of my works. I decided to use Deepseek and Gemini because there are free to use. Gemini had an offer which allowed students to use their GenAI for free, for 1 year. GenAI has helped me alot with troubleshooting errors when it comes to my work, rather than relying on stackoverflow which was usually used during my polytechnic days."
   }
 ]

@@ -1,0 +1,7 @@
+---
+title: "Reflection on the use of GenAI"
+editor: visual
+---
+
+**Reflection**
+Recently I have been using Deepseek and Gemini to assist me with some of my works. I decided to use Deepseek and Gemini because there are free to use. Gemini had an offer which allowed students to use their GenAI for free, for 1 year. GenAI has helped me alot with troubleshooting errors when it comes to my work, rather than relying on stackoverflow which was usually used during my polytechnic days.

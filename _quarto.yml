@@ -3,7 +3,7 @@ project:
   output-dir: docs
   
 website:
-  title: "temp_website"
+  title: "Syahfariz's Website"
   favicon: favicon.png
   navbar:
     logo: logo.png
@@ -14,6 +14,10 @@ website:
       text: FYP Project
     - href: data-vis.qmd
       text: Data Visualization
+    - href: movie.qmd
+      text: Movie
+    - href: reflection.qmd
+      text: Reflection
       
       
 
