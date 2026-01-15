@@ -25,21 +25,21 @@
     "href": "fyp.html",
     "title": "FYP",
     "section": "",
-    "text": "Here are some content relating to my fyp project.\nI used UI path to help with the rpa of invoices with Tampines Town Council. Below is an example of how the UI Path workspace looks like.\n\n\n\nUI Path Workflow"
+    "text": "Here are some content relating to my fyp project.\nI used UI path to help with the rpa of invoices with Tampines Town Council. Below is an example of how the UI Path workspace looks like.\n\n\n\n\nUI Path Workflow"
   },
   {
     "objectID": "data-vis.html",
     "href": "data-vis.html",
     "title": "Data Visualization",
     "section": "",
-    "text": "During my second year Psychology Research Methods course, I conducted an independent study exploring how lifestyle factors affect academic outcomes. As a student juggling coursework, part-time work, and extracurricular activities, I noticed my own grades fluctuated with my sleep schedule. This sparked my curiosity: Was there a quantifiable relationship between sleep and academic performance across the student population?\n\n\n\nTimeline: Conducted over Fall 2023 semester\nSample: 85 undergraduate students (voluntary participation)\nMethod: Daily sleep logs + end-of-semester GPA collection\nEthics: Anonymous data collection with institutional approval\nPersonal Motivation: To make data-driven decisions about my own study habits\n\n\n\n\n\n\n#| label: fig-sleep-gpa #| fig-cap: “Relationship Between Average Sleep Hours and Semester GPA” #| warning: false #| message: false # Load required packages library(ggplot2) library(dplyr) library(ggpubr)"
+    "text": "I created this visualization during my Data Science course. The task was to explore the mtcars dataset.\n\n\n\nLoaded the data in R\nCleaned column names\nCreated a scatter plot with ggplot2\n\n\n\n\n\n# Ensure dataset is loaded\ndata(mtcars)\n\n# Load ggplot2\nlibrary(ggplot2)\n\n# Create the visualization\nggplot(mtcars, aes(x = mpg, y = hp)) +\n  geom_point(color = \"blue\", size = 3, alpha = 0.7) +\n  geom_smooth(method = \"lm\", color = \"darkred\", se = FALSE, linetype = \"dashed\") +\n  labs(\n    title = \"Fuel Efficiency vs Horsepower in 1974 Cars\",\n    subtitle = \"Strong negative correlation observed\",\n    x = \"Miles per Gallon (MPG)\",\n    y = \"Horsepower (HP)\",\n    caption = \"Data: 1974 Motor Trend US magazine\"\n  ) +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(face = \"bold\", size = 16),\n    plot.subtitle = element_text(color = \"gray40\")\n  )\n\n\n\n\n\n\n\nFigure 1: MPG vs Horsepower in mtcars dataset\n\n\n\n\n\n\n\n\n\nNegative correlation: Higher horsepower generally means lower MPG (r ≈ -0.78)\nOutliers: Some cars have unusual MPG for their horsepower\nStatistical insight: Every 10 HP increase ≈ 1.5 MPG decrease\n\n\n“This insight helped me understand engine efficiency trade-offs in automotive design.”\n\n\n\n\n\nDataset Documentation\nggplot2 Cheatsheet\n\n\nThis project taught me the importance of choosing the right visualization for continuous variables."
   },
   {
     "objectID": "data-vis.html#my-visualization-project",
     "href": "data-vis.html#my-visualization-project",
     "title": "Data Visualization",
     "section": "",
-    "text": "Here is a plot from my student work:\nExplanation: This plot shows the relationship between fuel efficiency and car weight…"
+    "text": "I created this visualization during my Data Science course. The task was to explore the mtcars dataset.\n\n\n\nLoaded the data in R\nCleaned column names\nCreated a scatter plot with ggplot2\n\n\n\n\n\n# Ensure dataset is loaded\ndata(mtcars)\n\n# Load ggplot2\nlibrary(ggplot2)\n\n# Create the visualization\nggplot(mtcars, aes(x = mpg, y = hp)) +\n  geom_point(color = \"blue\", size = 3, alpha = 0.7) +\n  geom_smooth(method = \"lm\", color = \"darkred\", se = FALSE, linetype = \"dashed\") +\n  labs(\n    title = \"Fuel Efficiency vs Horsepower in 1974 Cars\",\n    subtitle = \"Strong negative correlation observed\",\n    x = \"Miles per Gallon (MPG)\",\n    y = \"Horsepower (HP)\",\n    caption = \"Data: 1974 Motor Trend US magazine\"\n  ) +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(face = \"bold\", size = 16),\n    plot.subtitle = element_text(color = \"gray40\")\n  )\n\n\n\n\n\n\n\nFigure 1: MPG vs Horsepower in mtcars dataset\n\n\n\n\n\n\n\n\n\nNegative correlation: Higher horsepower generally means lower MPG (r ≈ -0.78)\nOutliers: Some cars have unusual MPG for their horsepower\nStatistical insight: Every 10 HP increase ≈ 1.5 MPG decrease\n\n\n“This insight helped me understand engine efficiency trade-offs in automotive design.”\n\n\n\n\n\nDataset Documentation\nggplot2 Cheatsheet\n\n\nThis project taught me the importance of choosing the right visualization for continuous variables."
   },
   {
     "objectID": "movie.html",
