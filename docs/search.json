@@ -32,14 +32,14 @@
     "href": "data-vis.html",
     "title": "Data Visualization",
     "section": "",
-    "text": "I created this visualization during my Data Science course. The task was to explore the mtcars dataset.\n\n\n\nLoaded the data in R\nCleaned column names\nCreated a scatter plot with ggplot2\n\n\n\n\n\n# Ensure dataset is loaded\ndata(mtcars)\n\n# Load ggplot2\nlibrary(ggplot2)\n\n# Create the visualization\nggplot(mtcars, aes(x = mpg, y = hp)) +\n  geom_point(color = \"blue\", size = 3, alpha = 0.7) +\n  geom_smooth(method = \"lm\", color = \"darkred\", se = FALSE, linetype = \"dashed\") +\n  labs(\n    title = \"Fuel Efficiency vs Horsepower in 1974 Cars\",\n    subtitle = \"Strong negative correlation observed\",\n    x = \"Miles per Gallon (MPG)\",\n    y = \"Horsepower (HP)\",\n    caption = \"Data: 1974 Motor Trend US magazine\"\n  ) +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(face = \"bold\", size = 16),\n    plot.subtitle = element_text(color = \"gray40\")\n  )\n\n\n\n\n\n\n\nFigure 1: MPG vs Horsepower in mtcars dataset\n\n\n\n\n\n\n\n\n\nNegative correlation: Higher horsepower generally means lower MPG (r ≈ -0.78)\nOutliers: Some cars have unusual MPG for their horsepower\nStatistical insight: Every 10 HP increase ≈ 1.5 MPG decrease\n\n\n“This insight helped me understand engine efficiency trade-offs in automotive design.”\n\n\n\n\n\nDataset Documentation\nggplot2 Cheatsheet\n\n\nThis project taught me the importance of choosing the right visualization for continuous variables."
+    "text": "I created this visualization during my Data Science course. The task was to explore the mtcars dataset.\n\n\n\nNegative correlation: Higher horsepower generally means lower MPG (r ≈ -0.78)\nOutliers: Some cars have unusual MPG for their horsepower\nStatistical insight: Every 10 HP increase ≈ 1.5 MPG decrease\n\n\n“This insight helped me understand engine efficiency trade-offs in automotive design.”\n\n\n\n\n\nDataset Documentation\nggplot2 Cheatsheet\n\n\nThis project taught me the importance of choosing the right visualization for continuous variables."
   },
   {
     "objectID": "data-vis.html#my-visualization-project",
     "href": "data-vis.html#my-visualization-project",
     "title": "Data Visualization",
     "section": "",
-    "text": "I created this visualization during my Data Science course. The task was to explore the mtcars dataset.\n\n\n\nLoaded the data in R\nCleaned column names\nCreated a scatter plot with ggplot2\n\n\n\n\n\n# Ensure dataset is loaded\ndata(mtcars)\n\n# Load ggplot2\nlibrary(ggplot2)\n\n# Create the visualization\nggplot(mtcars, aes(x = mpg, y = hp)) +\n  geom_point(color = \"blue\", size = 3, alpha = 0.7) +\n  geom_smooth(method = \"lm\", color = \"darkred\", se = FALSE, linetype = \"dashed\") +\n  labs(\n    title = \"Fuel Efficiency vs Horsepower in 1974 Cars\",\n    subtitle = \"Strong negative correlation observed\",\n    x = \"Miles per Gallon (MPG)\",\n    y = \"Horsepower (HP)\",\n    caption = \"Data: 1974 Motor Trend US magazine\"\n  ) +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(face = \"bold\", size = 16),\n    plot.subtitle = element_text(color = \"gray40\")\n  )\n\n\n\n\n\n\n\nFigure 1: MPG vs Horsepower in mtcars dataset\n\n\n\n\n\n\n\n\n\nNegative correlation: Higher horsepower generally means lower MPG (r ≈ -0.78)\nOutliers: Some cars have unusual MPG for their horsepower\nStatistical insight: Every 10 HP increase ≈ 1.5 MPG decrease\n\n\n“This insight helped me understand engine efficiency trade-offs in automotive design.”\n\n\n\n\n\nDataset Documentation\nggplot2 Cheatsheet\n\n\nThis project taught me the importance of choosing the right visualization for continuous variables."
+    "text": "I created this visualization during my Data Science course. The task was to explore the mtcars dataset.\n\n\n\nNegative correlation: Higher horsepower generally means lower MPG (r ≈ -0.78)\nOutliers: Some cars have unusual MPG for their horsepower\nStatistical insight: Every 10 HP increase ≈ 1.5 MPG decrease\n\n\n“This insight helped me understand engine efficiency trade-offs in automotive design.”\n\n\n\n\n\nDataset Documentation\nggplot2 Cheatsheet\n\n\nThis project taught me the importance of choosing the right visualization for continuous variables."
   },
   {
     "objectID": "movie.html",
@@ -67,6 +67,13 @@
     "href": "data-vis.html#the-visualization",
     "title": "Data Visualization",
     "section": "",
-    "text": "#| label: fig-sleep-gpa #| fig-cap: “Relationship Between Average Sleep Hours and Semester GPA” #| warning: false #| message: false # Load required packages library(ggplot2) library(dplyr) library(ggpubr)"
+    "text": "#| label: fig-sleep-patterns #| fig-cap: “Average Sleep Hours by Day of Week and Assignment Load” #| warning: false # Load required libraries library(ggplot2) library(dplyr)"
+  },
+  {
+    "objectID": "data-vis.html#the-story-behind-this-visualization",
+    "href": "data-vis.html#the-story-behind-this-visualization",
+    "title": "Data Visualization",
+    "section": "",
+    "text": "During my Introduction to Statistics course in Year 2, we conducted a class survey about lifestyle habits. As a student who often pulled all-nighters during exam season, I was particularly curious about sleep patterns. I collected data from 50 classmates over a typical academic week (Monday to Friday) to explore the relationship between academic workload and sleep duration.\n\n\n\nParticipants: 50 undergraduate students (25 male, 25 female)\nData Collected: Daily sleep hours, day of week, assignment deadlines\nTime Period: One typical academic week\nCollection Method: Anonymous Google Form with self-reported data"
   }
 ]

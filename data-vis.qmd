@@ -6,6 +6,41 @@ title: "Data Visualization"
 
 I created this visualization during my **Data Science** course. The task was to explore the `mtcars` dataset.
 
+### Steps I followed:
+
+1. Loaded the data in R
+2. Cleaned column names
+3. Created a scatter plot with `ggplot2`
+
+### Here's the fixed code:
+
+```{r}
+#| label: fig-mpg-vs-hp
+#| warning: false
+#| fig-cap: MPG vs Horsepower in mtcars dataset
+# Ensure dataset is loaded
+data(mtcars)
+
+# Load ggplot2
+library(ggplot2)
+
+# Create the visualization
+ggplot(mtcars, aes(x = mpg, y = hp)) +
+  geom_point(color = "blue", size = 3, alpha = 0.7) +
+  geom_smooth(method = "lm", color = "darkred", se = FALSE, linetype = "dashed") +
+  labs(
+    title = "Fuel Efficiency vs Horsepower in 1974 Cars",
+    subtitle = "Strong negative correlation observed",
+    x = "Miles per Gallon (MPG)",
+    y = "Horsepower (HP)",
+    caption = "Data: 1974 Motor Trend US magazine"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(face = "bold", size = 16),
+    plot.subtitle = element_text(color = "gray40")
+  )
+```
 
 ### Key Findings:
 
