@@ -4,9 +4,9 @@ title: "Your Name"
 
 ## Welcome to My Website
 
-![Your Photo](path/to/photo.jpg){width=50%}
+![Your Photo](C:\Users\syahf\Downloads\mypic.jpg){width=50%}
 
-Here is a short introduction about myself...
+Here is a short introduction about myself hello
 
 ```{r}
 1 + 1
