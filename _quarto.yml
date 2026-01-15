@@ -8,9 +8,16 @@ website:
   navbar:
     logo: logo.png
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+    - href: index.qmd
+      text: Home
+    - href: fyp.qmd
+      text: FYP Project
+    - href: data-vis.qmd
+      text: Data Visualization
+      
+      
+
+
 
 format:
   html:

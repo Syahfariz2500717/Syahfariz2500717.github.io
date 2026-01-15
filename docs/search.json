@@ -4,20 +4,41 @@
     "href": "index.html",
     "title": "Your Name",
     "section": "",
-    "text": "Your Photo\n\n\nHere is a short introduction about myself hello\n\n1 + 1\n\n[1] 2"
+    "text": "Photo\n\n\nHere is a short introduction about myself : I am a year 1 applied computing student and I was from Temasek Polytechnic"
   },
   {
     "objectID": "index.html#welcome-to-my-website",
     "href": "index.html#welcome-to-my-website",
     "title": "Your Name",
     "section": "",
-    "text": "Your Photo\n\n\nHere is a short introduction about myself hello\n\n1 + 1\n\n[1] 2"
+    "text": "Photo\n\n\nHere is a short introduction about myself : I am a year 1 applied computing student and I was from Temasek Polytechnic"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Data Projects",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "fyp.html",
+    "href": "fyp.html",
+    "title": "FYP",
+    "section": "",
+    "text": "Here are some content relating to my fyp project.\nI used UI path to help with the rpa of invoices with Tampines Town Council. Below is an example of how the UI Path workspace looks like.\n\n\n\nPhoto"
+  },
+  {
+    "objectID": "data-vis.html",
+    "href": "data-vis.html",
+    "title": "Data Visualization",
+    "section": "",
+    "text": "Here is a plot from my student work:\n\nlibrary(ggplot2)\nggplot(mtcars, aes(x = mpg, y = wt)) +\n  geom_point() +\n  labs(title = \"MPG vs Weight\")\n\n\n\n\n\n\n\n\nExplanation: This plot shows the relationship between fuel efficiency and car weight…"
+  },
+  {
+    "objectID": "data-vis.html#my-visualization-project",
+    "href": "data-vis.html#my-visualization-project",
+    "title": "Data Visualization",
+    "section": "",
+    "text": "Here is a plot from my student work:\n\nlibrary(ggplot2)\nggplot(mtcars, aes(x = mpg, y = wt)) +\n  geom_point() +\n  labs(title = \"MPG vs Weight\")\n\n\n\n\n\n\n\n\nExplanation: This plot shows the relationship between fuel efficiency and car weight…"
   }
 ]
