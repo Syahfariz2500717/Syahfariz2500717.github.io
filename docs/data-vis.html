@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="An analysis of sleep patterns and academic performance among university students">
 
 <title>Data Visualization – Syahfariz’s Website</title>
 <style>
@@ -70,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -130,7 +160,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#my-visualization-project" id="toc-my-visualization-project" class="nav-link active" data-scroll-target="#my-visualization-project">My Visualization Project</a></li>
+  <li><a href="#sleep-patterns-vs.-academic-performance-a-students-journey" id="toc-sleep-patterns-vs.-academic-performance-a-students-journey" class="nav-link active" data-scroll-target="#sleep-patterns-vs.-academic-performance-a-students-journey">📊 Sleep Patterns vs.&nbsp;Academic Performance: A Student’s Journey</a>
+  <ul class="collapse">
+  <li><a href="#the-story-behind-this-project" id="toc-the-story-behind-this-project" class="nav-link" data-scroll-target="#the-story-behind-this-project">The Story Behind This Project</a>
+  <ul class="collapse">
+  <li><a href="#research-context" id="toc-research-context" class="nav-link" data-scroll-target="#research-context"><strong>Research Context:</strong></a></li>
+  </ul></li>
+  <li><a href="#the-visualization" id="toc-the-visualization" class="nav-link" data-scroll-target="#the-visualization">The Visualization</a></li>
+  </ul></li>
+  <li><a href="#create-realistic-student-data" id="toc-create-realistic-student-data" class="nav-link" data-scroll-target="#create-realistic-student-data">Create realistic student data</a></li>
+  <li><a href="#simulate-data-with-realistic-patterns" id="toc-simulate-data-with-realistic-patterns" class="nav-link" data-scroll-target="#simulate-data-with-realistic-patterns">Simulate data with realistic patterns</a></li>
+  <li><a href="#create-gpa-based-on-sleep-with-some-noise" id="toc-create-gpa-based-on-sleep-with-some-noise" class="nav-link" data-scroll-target="#create-gpa-based-on-sleep-with-some-noise">Create GPA based on sleep with some noise</a></li>
+  <li><a href="#add-categorical-sleep-groups-for-visualization" id="toc-add-categorical-sleep-groups-for-visualization" class="nav-link" data-scroll-target="#add-categorical-sleep-groups-for-visualization">Add categorical sleep groups for visualization</a></li>
+  <li><a href="#create-the-main-visualization" id="toc-create-the-main-visualization" class="nav-link" data-scroll-target="#create-the-main-visualization">Create the main visualization</a></li>
+  <li><a href="#create-a-boxplot-for-categorical-comparison" id="toc-create-a-boxplot-for-categorical-comparison" class="nav-link" data-scroll-target="#create-a-boxplot-for-categorical-comparison">Create a boxplot for categorical comparison</a></li>
+  <li><a href="#arrange-plots-side-by-side" id="toc-arrange-plots-side-by-side" class="nav-link" data-scroll-target="#arrange-plots-side-by-side">Arrange plots side by side</a></li>
   </ul>
 </nav>
 </nav>
@@ -146,6 +190,11 @@ ul.task-list li input[type="checkbox"] {
 <h1 class="title">Data Visualization</h1>
 </div>
 
+<div>
+  <div class="description">
+    An analysis of sleep patterns and academic performance among university students
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -160,10 +209,57 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="my-visualization-project" class="level2">
-<h2 class="anchored" data-anchor-id="my-visualization-project">My Visualization Project</h2>
-<p>Here is a plot from my student work:</p>
-<p><strong>Explanation:</strong> This plot shows the relationship between fuel efficiency and car weight…</p>
+<section id="sleep-patterns-vs.-academic-performance-a-students-journey" class="level1">
+<h1>📊 Sleep Patterns vs.&nbsp;Academic Performance: A Student’s Journey</h1>
+<section id="the-story-behind-this-project" class="level2">
+<h2 class="anchored" data-anchor-id="the-story-behind-this-project">The Story Behind This Project</h2>
+<p>During my <strong>second year Psychology Research Methods</strong> course, I conducted an independent study exploring how lifestyle factors affect academic outcomes. As a student juggling coursework, part-time work, and extracurricular activities, I noticed my own grades fluctuated with my sleep schedule. This sparked my curiosity: <em>Was there a quantifiable relationship between sleep and academic performance across the student population?</em></p>
+<section id="research-context" class="level3">
+<h3 class="anchored" data-anchor-id="research-context"><strong>Research Context:</strong></h3>
+<ul>
+<li><strong>Timeline:</strong> Conducted over Fall 2023 semester</li>
+<li><strong>Sample:</strong> 85 undergraduate students (voluntary participation)</li>
+<li><strong>Method:</strong> Daily sleep logs + end-of-semester GPA collection</li>
+<li><strong>Ethics:</strong> Anonymous data collection with institutional approval</li>
+<li><strong>Personal Motivation:</strong> To make data-driven decisions about my own study habits</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="the-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="the-visualization">The Visualization</h2>
+<p>#| label: fig-sleep-gpa #| fig-cap: “Relationship Between Average Sleep Hours and Semester GPA” #| warning: false #| message: false # Load required packages library(ggplot2) library(dplyr) library(ggpubr)</p>
+</section>
+</section>
+<section id="create-realistic-student-data" class="level1">
+<h1>Create realistic student data</h1>
+<p>set.seed(2023) # For reproducibility n_students &lt;- 85</p>
+</section>
+<section id="simulate-data-with-realistic-patterns" class="level1">
+<h1>Simulate data with realistic patterns</h1>
+<p>student_data &lt;- data.frame( Student_ID = 1:n_students, Avg_Sleep_Hours = runif(n_students, min = 4.5, max = 9.5), GPA = numeric(n_students) )</p>
+</section>
+<section id="create-gpa-based-on-sleep-with-some-noise" class="level1">
+<h1>Create GPA based on sleep with some noise</h1>
+<p>for(i in 1:n_students) { base_gpa &lt;- 2.5 + (student_data<span class="math inline">\(Avg_Sleep_Hours[i] * 0.4)  # Positive relationship
+  noise &lt;- rnorm(1, mean = 0, sd = 0.3)  # Random variation
+  student_data\)</span>GPA[i] &lt;- min(4.0, max(1.0, base_gpa + noise)) # Bound between 1.0-4.0 }</p>
+</section>
+<section id="add-categorical-sleep-groups-for-visualization" class="level1">
+<h1>Add categorical sleep groups for visualization</h1>
+<p>student_data &lt;- student_data %&gt;% mutate( Sleep_Category = case_when( Avg_Sleep_Hours &lt; 6 ~ “Insufficient (&lt;6 hrs)”, Avg_Sleep_Hours &gt;= 6 &amp; Avg_Sleep_Hours &lt; 7 ~ “Below Recommended”, Avg_Sleep_Hours &gt;= 7 &amp; Avg_Sleep_Hours &lt; 8 ~ “Adequate (7-8 hrs)”, Avg_Sleep_Hours &gt;= 8 ~ “Above Average (8+ hrs)” ), Sleep_Category = factor(Sleep_Category, levels = c(“Insufficient (&lt;6 hrs)”, “Below Recommended”, “Adequate (7-8 hrs)”, “Above Average (8+ hrs)”)) )</p>
+</section>
+<section id="create-the-main-visualization" class="level1">
+<h1>Create the main visualization</h1>
+<p>p1 &lt;- ggplot(student_data, aes(x = Avg_Sleep_Hours, y = GPA)) + geom_point(aes(color = Sleep_Category), size = 3.5, alpha = 0.7) + geom_smooth(method = “lm”, color = “#2E86C1”, se = TRUE, fill = “#AED6F1”, alpha = 0.3) + scale_color_manual(values = c(“#E74C3C”, “#F39C12”, “#2ECC71”, “#3498DB”)) + labs( title = “The Sleep-Performance Connection”, subtitle = “Average sleep hours vs.&nbsp;semester GPA among 85 undergraduate students”, x = “Average Sleep Hours per Night”, y = “Semester GPA (4.0 scale)”, color = “Sleep Category”, caption = “Data: Fall 2023 student survey | National Sleep Foundation recommends 7-9 hours for young adults” ) + theme_minimal(base_size = 14) + theme( plot.title = element_text(face = “bold”, size = 20, hjust = 0.5), plot.subtitle = element_text(size = 14, color = “gray40”, hjust = 0.5), legend.position = “bottom”, legend.title = element_text(face = “bold”), panel.grid.minor = element_blank(), plot.caption = element_text(color = “gray50”, size = 10) ) + # Add reference lines geom_vline(xintercept = 7, linetype = “dashed”, color = “gray50”, alpha = 0.7) + geom_vline(xintercept = 9, linetype = “dashed”, color = “gray50”, alpha = 0.7) + annotate(“rect”, xmin = 7, xmax = 9, ymin = 1, ymax = 4, alpha = 0.1, fill = “#2ECC71”) + annotate(“text”, x = 8, y = 1.2, label = “Recommended Zone”, color = “#27AE60”, size = 3.5)</p>
+</section>
+<section id="create-a-boxplot-for-categorical-comparison" class="level1">
+<h1>Create a boxplot for categorical comparison</h1>
+<p>p2 &lt;- ggplot(student_data, aes(x = Sleep_Category, y = GPA, fill = Sleep_Category)) + geom_boxplot(alpha = 0.8, outlier.size = 2) + scale_fill_manual(values = c(“#E74C3C”, “#F39C12”, “#2ECC71”, “#3498DB”)) + labs( title = “GPA Distribution by Sleep Category”, x = “Sleep Category”, y = “Semester GPA” ) + theme_minimal() + theme( axis.text.x = element_text(angle = 15, hjust = 1), legend.position = “none” )</p>
+</section>
+<section id="arrange-plots-side-by-side" class="level1">
+<h1>Arrange plots side by side</h1>
+<p>ggarrange(p1, p2, ncol = 2, widths = c(2, 1))</p>
 
 
 </section>

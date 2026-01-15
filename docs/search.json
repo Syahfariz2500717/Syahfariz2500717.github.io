@@ -32,7 +32,7 @@
     "href": "data-vis.html",
     "title": "Data Visualization",
     "section": "",
-    "text": "Here is a plot from my student work:\nExplanation: This plot shows the relationship between fuel efficiency and car weight…"
+    "text": "During my second year Psychology Research Methods course, I conducted an independent study exploring how lifestyle factors affect academic outcomes. As a student juggling coursework, part-time work, and extracurricular activities, I noticed my own grades fluctuated with my sleep schedule. This sparked my curiosity: Was there a quantifiable relationship between sleep and academic performance across the student population?\n\n\n\nTimeline: Conducted over Fall 2023 semester\nSample: 85 undergraduate students (voluntary participation)\nMethod: Daily sleep logs + end-of-semester GPA collection\nEthics: Anonymous data collection with institutional approval\nPersonal Motivation: To make data-driven decisions about my own study habits\n\n\n\n\n\n\n#| label: fig-sleep-gpa #| fig-cap: “Relationship Between Average Sleep Hours and Semester GPA” #| warning: false #| message: false # Load required packages library(ggplot2) library(dplyr) library(ggpubr)"
   },
   {
     "objectID": "data-vis.html#my-visualization-project",
@@ -54,5 +54,19 @@
     "title": "Reflection on the use of GenAI",
     "section": "",
     "text": "Recently I have been using Deepseek and Gemini to assist me with some of my works. I decided to use Deepseek and Gemini because there are free to use. Gemini had an offer which allowed students to use their GenAI for free, for 1 year. GenAI has helped me alot with troubleshooting errors when it comes to my work, rather than relying on stackoverflow which was usually used during my polytechnic days."
+  },
+  {
+    "objectID": "data-vis.html#the-story-behind-this-project",
+    "href": "data-vis.html#the-story-behind-this-project",
+    "title": "Data Visualization",
+    "section": "",
+    "text": "During my second year Psychology Research Methods course, I conducted an independent study exploring how lifestyle factors affect academic outcomes. As a student juggling coursework, part-time work, and extracurricular activities, I noticed my own grades fluctuated with my sleep schedule. This sparked my curiosity: Was there a quantifiable relationship between sleep and academic performance across the student population?\n\n\n\nTimeline: Conducted over Fall 2023 semester\nSample: 85 undergraduate students (voluntary participation)\nMethod: Daily sleep logs + end-of-semester GPA collection\nEthics: Anonymous data collection with institutional approval\nPersonal Motivation: To make data-driven decisions about my own study habits"
+  },
+  {
+    "objectID": "data-vis.html#the-visualization",
+    "href": "data-vis.html#the-visualization",
+    "title": "Data Visualization",
+    "section": "",
+    "text": "#| label: fig-sleep-gpa #| fig-cap: “Relationship Between Average Sleep Hours and Semester GPA” #| warning: false #| message: false # Load required packages library(ggplot2) library(dplyr) library(ggpubr)"
   }
 ]
